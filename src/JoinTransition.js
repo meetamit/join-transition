@@ -105,7 +105,7 @@ JoinTransition.propTypes = {
   children: PropTypes.func.isRequired,
 
   interpolate: PropTypes.func,
-  shouldTransition: PropTypes.func,
+  shouldTransition: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
   queue: PropTypes.bool,
   duration: PropTypes.number,
   ease: PropTypes.func,
